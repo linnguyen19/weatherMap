@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Weather Map </title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <header>
+          <h1> Weather Map </h1>
+          <p> Enter in a U.S. city to receive the temperature, conditions, humidity and wind </p>
+        </header>
+
+        <main>
+          <form id="weatherInputs">
+            <label>
+              U.S. City: 
+              <input type="text" id="cityInput" placeholder="City Input">
+            </label>
+            <button type="submit"> Submit </button>
+          </form>
+
+          <p id="errorMsg"></p>
+
+          <div id="weatherData">
+            <h2 id="cityName"></h2>
+            <p id="temperature"></p>
+            <p id="conditions"></p>
+            <p id="humidity"></p>
+            <p id="wind"></p>
+
+            <img id="weatherImg" src="" alt="weather photo">
+
+          </div>
+        </main>
+
+          <script src="js/script.js"></script>
+
+          <footer>
+            <p> Data for weather is using OpenWetherMap API </p>
+            <p> </p>
+            <p>&copy; 2026 Linda Nguyen. All rights reserved.</p>
+            <p>This site is for academic purposes only.</p>
+            <p>CST 336 Internet Programming.</p>
+            <figure>
+                <img src="img/csumblogo.jpg" alt="CSUMB Logo">
+            </figure>
+        </footer>
+    </body>
+</html>
